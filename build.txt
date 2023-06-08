@@ -2,11 +2,13 @@
 mod_id=modid
 archive_name=ModId
 mod_name=Mod Name
-mod_version=20.0.0
 mod_license=All Rights Reserved
 mod_authors=Zeitheron
 mod_description=Example mod description.\nNewline characters can be used and will be replaced properly.
 issue_tracker_url=https://github.com/dragon-forge/HammerLib
+
+mod_version=20.0.0
+build_candidate=false
 
 # Maven Info
 maven_group=org.zeith.modid
