@@ -7,12 +7,12 @@ mod_authors=Zeitheron
 mod_description=Example mod description.\nNewline characters can be used and will be replaced properly.
 issue_tracker_url=https://github.com/dragon-forge/HammerLib
 
-mod_version=20.0.0
+mod_version=20.0.1
 build_candidate=false
 
 # Maven Info
 maven_group=org.zeith.modid
-hl_version=20.0.1
+hl_version=20.0.4
 maven_url=file:///SERVER//Maven
 
 # MC Info
