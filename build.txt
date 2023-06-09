@@ -1,18 +1,23 @@
 # Mod Info
-mod_id=modid
-archive_name=ModId
-mod_name=Mod Name
-mod_license=All Rights Reserved
-mod_authors=Zeitheron
-mod_description=Example mod description.\nNewline characters can be used and will be replaced properly.
-issue_tracker_url=https://github.com/dragon-forge/HammerLib
-
 mod_version=20.0.1
 build_candidate=false
 
+# Mod dependencies (jei is not a requirement, but HammerLib is)
+hl_version=20.0.4
+jei_version=14.0.0.4
+
+# Persistent mod info
+mod_id=modid
+archive_name=ModId
+mod_name=Mod Name
+mod_description=Example mod description.\nNewline characters can be used and will be replaced properly.
+mod_authors=Zeitheron
+mod_license=All Rights Reserved
+mod_credits=None
+issue_tracker_url=https://github.com/dragon-forge/HammerLib/issues
+
 # Maven Info
 maven_group=org.zeith.modid
-hl_version=20.0.4
 maven_url=file:///SERVER//Maven
 
 # MC Info
@@ -27,7 +32,7 @@ java=17
 
 # Project ID on CurseForge
 cf_project=0
-modrinth_project=bhEwCNbH
+modrinth_project=
 
 # alpha, beta, release
 release_type=alpha
