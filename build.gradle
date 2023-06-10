@@ -511,21 +511,31 @@ tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
 }
 
-// This piece of garbage will ensure that the build number is updated after build is executed.
-tasks.build.doLast {
+import java.nio.file.Files
+
+def incrementBuild = {
     if (!hasConfig("build_candidate") || !Boolean.parseBoolean(config.build_candidate)) {
-        def buildTxt = configFile.toPath();
-        List<String> lines = Files.readAllLines buildTxt;
+        def buildTxt = configFile.toPath()
+        List<String> lines = Files.readAllLines buildTxt
         lines.replaceAll { String ln ->
             if (ln.startsWith("mod_version")) {
-                def version = ln.split("=")[1];
-                def dot = version.lastIndexOf('.') + 1;
-                def newVersion = version.substring(0, dot);
-                def lastOne = Integer.parseInt(version.substring(dot)) + 1;
-                return "mod_version=" + newVersion + lastOne;
+                def version = ln.split("=")[1]
+                def dot = version.lastIndexOf('.') + 1
+                def newVersion = version.substring(0, dot)
+                def lastOne = Integer.parseInt(version.substring(dot)) + 1
+                return "mod_version=" + newVersion + lastOne
             }
-            return ln;
+            return ln
         }
-        Files.write buildTxt, lines, StandardOpenOption.CREATE;
+        Files.write buildTxt, lines, java.nio.file.StandardOpenOption.CREATE
     } else println "Build candidate enabled, we are not increasing build number after this."
 }
+
+tasks.register("incrementBuildVersionProperty") {
+    group "upload"
+    doLast incrementBuild
+}
+
+// This piece of garbage will ensure that the build number is updated after build is executed.
+tasks.build.doLast incrementBuild
+tasks.buildAndUploadMod.doLast incrementBuild
