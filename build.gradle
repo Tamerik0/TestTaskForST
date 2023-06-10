@@ -141,8 +141,8 @@ repositories {
         url = "https://maven.zeith.org/"
     }
     maven {
-        name = "Progwml6 maven"
-        url = "https://dvs1.progwml6.com/files/maven/"
+        name = "Jared's maven"
+        url = "https://maven.blamejared.com/" // location of the maven that hosts JEI files since January 2023
     }
     flatDir { dirs "libraries/${config.mc_version}/all" }
     flatDir { dirs "libraries/${config.mc_version}/classpathOnly" }
