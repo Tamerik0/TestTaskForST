@@ -292,6 +292,7 @@ modrinth {
     versionType = config.release_type
     uploadFile = jar
     gameVersions = [config.mc_version]
+    loaders = ['Forge', 'NeoForge']
     dependencies {
         def mods = config.required_mods.split(";")
         if (mods.length > 0 && (mods.length > 1 || !mods[0].isEmpty()))
@@ -356,6 +357,7 @@ curseforge {
         releaseType = config.release_type
         addGameVersion config.mc_version
         addGameVersion "Forge"
+        addGameVersion "NeoForge"
         mainArtifact(jar) {
             displayName = "[${config.mc_version}] ${config.mod_name} - ${config.mod_version}"
         }
