@@ -159,11 +159,11 @@ dependencies {
     minecraft "net.neoforged:forge:${config.mc_version}-${config.forge_version}"
 
     if (hasConfig("hl_version") && !config.hl_version.isEmpty()) {
-        implementation "org.zeith.hammerlib:HammerLib-${config.mc_version}:${config.hl_version}:deobf"
+        implementation fg.deobf("org.zeith.hammerlib:HammerLib-${config.mc_version}:${config.hl_version}")
     }
 	
     if (hasConfig("hammeranims_version") && !config.hammeranims_version.isEmpty()) {
-        implementation "org.zeith.hammeranims:HammerAnimations-${config.mc_version}:${config.hammeranims_version}:deobf"
+        implementation fg.deobf("org.zeith.hammeranims:HammerAnimations-${config.mc_version}:${config.hammeranims_version}")
     }
 
     if (hasConfig("jei_version") && !config.jei_version.isEmpty()) {
