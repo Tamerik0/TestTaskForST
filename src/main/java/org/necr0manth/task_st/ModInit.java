@@ -1,4 +1,4 @@
-package org.zeith.modid;
+package org.necr0manth.task_st;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.fml.common.Mod;
@@ -7,10 +7,10 @@ import org.zeith.hammerlib.core.adapter.LanguageAdapter;
 import org.zeith.hammerlib.core.init.ItemsHL;
 import org.zeith.hammerlib.proxy.HLConstants;
 
-@Mod(ModId.MOD_ID)
-public class ModId
+@Mod(ModInit.MOD_ID)
+public class ModInit
 {
-	public static final String MOD_ID = "modid";
+	public static final String MOD_ID = "task_st";
 	
 	@CreativeTab.RegisterTab
 	public static final CreativeTab MOD_TAB = new CreativeTab(id("root"),
@@ -19,7 +19,7 @@ public class ModId
 					.withTabsBefore(HLConstants.HL_TAB.id())
 	);
 	
-	public ModId()
+	public ModInit()
 	{
 		LanguageAdapter.registerMod(MOD_ID);
 	}

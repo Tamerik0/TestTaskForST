@@ -1,4 +1,4 @@
-package org.zeith.modid.init;
+package org.necr0manth.task_st.init;
 
 import org.zeith.hammerlib.annotations.SimplyRegister;
 

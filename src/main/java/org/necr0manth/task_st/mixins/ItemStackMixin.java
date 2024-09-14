@@ -1,4 +1,4 @@
-package org.zeith.modid.mixins;
+package org.necr0manth.task_st.mixins;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;

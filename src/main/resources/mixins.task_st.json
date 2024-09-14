@@ -1,12 +1,12 @@
 {
 	"required": true,
 	"minVersion": "0.8.5",
-	"package": "org.zeith.modid.mixins",
-	"refmap": "mixins.modid.refmap.json",
+	"package": "org.necr0manth.task_st.mixins",
+	"refmap": "mixins.task_st.refmap.json",
 	"target": "@env(DEFAULT)",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ItemStackMixin"
+      "ItemStackMixin"
 	],
 	"client": [
 	],
