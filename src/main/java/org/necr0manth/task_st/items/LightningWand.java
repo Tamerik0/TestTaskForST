@@ -13,6 +13,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 import org.joml.Quaternionf;
 import org.joml.Vector3d;
+import org.necr0manth.task_st.TaskStMod;
 import org.necr0manth.task_st.entities.BallLightning;
 import org.necr0manth.task_st.init.CreativeTabs;
 import org.necr0manth.task_st.init.Items;
@@ -29,6 +30,7 @@ public class LightningWand extends Item implements ITabItem {
     }
 
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag flag) {
+        tooltip.add(Component.literal("You can use it by clicking or holding RMB, and you can also press shift and hold RMB."));
     }
 
     public static final int maxShortClickTime = 6;
