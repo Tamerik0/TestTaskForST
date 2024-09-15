@@ -1,4 +1,4 @@
-
-item.task_st.test=Test item
-
-creative_tab.task_st.root=Mod Name
+item.task_st.lightning_wand=Lightning wand
+creative_tab.task_st.root=Mod
+key.categories.task_st=ST mod
+key.change_wand_mode=Change wand mode
