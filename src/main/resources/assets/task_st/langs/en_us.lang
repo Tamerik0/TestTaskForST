@@ -1,3 +1,5 @@
 item.task_st.lightning_wand=Lightning wand
+block.task_st.lightning_generator=Lightning generator
+item.task_st.lightning_generator=Lightning generator
 creative_tab.task_st.root=ST mod
 key.categories.task_st=ST mod

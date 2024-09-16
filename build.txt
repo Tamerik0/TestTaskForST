@@ -10,7 +10,7 @@ jei_version=15.2.0.22
 # Persistent mod info
 mod_id=task_st
 archive_name=TestTaskForST
-mod_name=Mod Name
+mod_name=TaskST
 mod_description=Example mod description.\nNewline characters can be used and will be replaced properly.
 mod_authors=Necr0manth,Zeitheron
 mod_license=All Rights Reserved

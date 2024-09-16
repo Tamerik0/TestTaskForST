@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "task_st:block/lightning_generator"
+    }
+  }
+}

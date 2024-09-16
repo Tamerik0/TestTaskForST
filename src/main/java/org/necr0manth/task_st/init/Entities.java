@@ -8,7 +8,7 @@ import org.zeith.hammerlib.annotations.RegistryName;
 import org.zeith.hammerlib.annotations.SimplyRegister;
 
 @SimplyRegister
-public class Entities {
+public interface Entities {
     @RegistryName("ball_lightning")
     public static final EntityType<BallLightning> BALL_LIGHTNING_ENTITY_TYPE = EntityType.Builder.<BallLightning>of(BallLightning::new, MobCategory.MISC)
             .fireImmune()
